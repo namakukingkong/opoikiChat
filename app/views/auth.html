@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <title>Presently</title>
     <link rel="stylesheet" href="../css/vendors/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sign_in.css">
 </head>
 <body ng-controller="authController">
-<div>
- <h3>Login</h3>
-  <!-- Form to get username & Password -->
-   <form>
-      <label>Username:</label><input type="text" ng-model="username" /></br></br>
-      <label></label>Password:</label><input type="password" ng-model="password"></br>
-      <button  type="button" ng-click="submit()">login</button>
-      <br>{{loginResult}}
-  </form>
-  <div ng-controller="Rooms">
-  </div>
-</div>
-<script src="../js/vendors/angular.min.js"></script>
-<script src="../js/vendors/angular-route.min.js"></script>
-<script src="../js/app.js"></script>
+    <div class="container signin">
+
+        <form class="form-signin" role="form">
+            <input type="email" class="form-control" ng-model="username"  placeholder="Email address" required autofocus>
+            <input type="password" class="form-control" ng-model="password"  placeholder="Password" required>
+            <label class="checkbox">
+            </label>
+            <button class="btn btn-lg btn-success btn-block" type="submit">Login</button>
+        </form>
+        {{loginResult}}
+        <div ng-controller="Rooms"></div>
+    </div> <!-- /container -->
+
+    <script src="../js/vendors/angular.min.js"></script>
+    <script src="../js/vendors/angular-route.min.js"></script>
+    <script src="../js/app.js"></script>
 <script src="../js/room.js"></script>
 </body>
 </html>

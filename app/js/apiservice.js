@@ -60,7 +60,7 @@
                         }
                     });
  
-                    return( request.then( handleSuccess, handleError ) );
+                    return request.then( handleSuccess, handleError );
  
                 }
  
@@ -270,7 +270,9 @@
                 // I transform the successful response, unwrapping the application data
                 // from the API response payload.
                 function handleSuccess( response ) {
-                    console.log(response);
+                    console.log('handle succes');
+                    console.log(response.data);
+                    console.log('end handle succes');
                     return( response.data );
  
                 }

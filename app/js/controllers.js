@@ -1,6 +1,7 @@
 'use strict';
 
 /* Controllers */
+var r;
 
 var chat = angular.module('chatControllers', []);
 console.log("call chatControllers")
@@ -16,5 +17,12 @@ chat.controller('AuthController', ['$scope', '$http', '$location','request',
 
 chat.controller('HomeController', ['$scope', '$http','request',
     function($scope, $http,request) {
-           $scope.rooms=request.rooms();
+            //r=request.rooms();
+            console.log("result:");
+            request.rooms()
+              .then(
+                function(res){
+                  $scope.rooms=res.results.rooms;
+              });
+            console.log("end result:");       //  $scope.rooms=request.rooms().data.results.rooms;
     }]);

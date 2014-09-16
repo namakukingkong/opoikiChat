@@ -4,19 +4,20 @@
 
 <div class="container-fluid">
     <div class="row">
+
         <div class="col-sm-3 col-md-2 sidebar .pre-scrollable">
 
                 <div class="panel-group" id="accordion">
 
-                    <div class="panel panel-default">
+                    <div class="panel panel-default" ng-repeat="r in rooms">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1">Nama room</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{r.id}}">{{r.name}}</a>
                             </h4>
                         </div>
-                        <div id="collapse-1" class="panel-collapse collapse">
+                        <div id="collapse-{{r.id}}" class="panel-collapse collapse">
                             <ul class="nav ">
-                                <li><a class="active" href="#">Topike</a></li>
+                                <li ><a class="active" href="#">Topike</a></li>
                                 <li><a href="#">Topike</a></li>
                                 <li><a href="#">Topike</a></li>
                                 <li><a href="#">Topike</a></li>

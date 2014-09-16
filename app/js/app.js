@@ -4,6 +4,7 @@
 
 var qischatMod = angular.module('qischat', [
     'ngRoute',
+    'ngCookies',
     'chatControllers'
 ]);
 
@@ -19,7 +20,7 @@ qischatMod.config(['$routeProvider',
                 controller: 'HomeController'
             }).
             otherwise({
-                redirectTo: '/login'
+                redirectTo: '/home'
             });
     }]);
 

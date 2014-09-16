@@ -13,7 +13,7 @@
             <input type="password" class="form-control" ng-model="password"  placeholder="Password" required>
             <label class="checkbox">
             </label>
-            <button class="btn btn-lg btn-success btn-block" type="submit">Login</button>
+            <button class="btn btn-lg btn-success btn-block" type="submit" ng-click="login(username,password)">Login</button>
         </form>
         {{loginResult}}
         <div ng-controller="Rooms"></div>
@@ -22,6 +22,7 @@
     <script src="../js/vendors/angular.min.js"></script>
     <script src="../js/vendors/angular-route.min.js"></script>
     <script src="../js/app.js"></script>
-<script src="../js/room.js"></script>
+    <script src="../js/room.js"></script>
+    <script src="../js/apiservice.js"></script>
 </body>
 </html>

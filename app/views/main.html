@@ -19,9 +19,14 @@
 
             <div class="row">
                 <div class="span4 collapse-group">
-                    <h2>Heading</h2>
+                    <h2>Rooms</h2>
                     <p class="collapse">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
                     <p><a class="btn" href="#">View details &raquo;</a></p>
+                    <ul>
+                        <li ng-repeat="room in rooms">
+                            {{rooms.}}
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -38,5 +43,6 @@
 <script src="../js/vendors/angular.min.js"></script>
 <script src="../js/vendors/angular-route.min.js"></script>
 <script src="../js/app.js"></script>
+<script src="../js/room.js"></script>
 </body>
 </html>

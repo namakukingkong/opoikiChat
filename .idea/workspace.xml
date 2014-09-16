@@ -29,7 +29,7 @@
       <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="33" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.585034" vertical-offset="357" max-vertical-offset="945">
+            <state line="39" column="33" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.6530612" vertical-offset="297" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
@@ -331,7 +331,11 @@
       <created>1410858464494</created>
       <updated>1410858464494</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix ul li">
+      <created>1410858663036</created>
+      <updated>1410858663036</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -378,7 +382,8 @@
     <MESSAGE value="oke fix" />
     <MESSAGE value="implement route" />
     <MESSAGE value="fix design topik" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix design topik" />
+    <MESSAGE value="fix ul li" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix ul li" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -582,7 +587,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="33" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.585034" vertical-offset="357" max-vertical-offset="945">
+        <state line="39" column="33" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.6530612" vertical-offset="297" max-vertical-offset="915">
           <folding />
         </state>
       </provider>

@@ -19,7 +19,7 @@ app.service('request', ['$http', function($http) {
       if(this.endpoints.hasOwnProperty(options.endpoint)) {
         url += this.endpoint;
       }
-  
+
       // return a new request object
       return new XHR(url, options);
     }

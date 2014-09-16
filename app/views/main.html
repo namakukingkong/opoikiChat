@@ -17,10 +17,9 @@
                         </div>
                         <div id="collapse-{{r.id}}" class="panel-collapse collapse">
                             <ul class="nav ">
-                                <li ><a class="active" href="#">Topike</a></li>
-                                <li><a href="#">Topike</a></li>
-                                <li><a href="#">Topike</a></li>
-                                <li><a href="#">Topike</a></li>
+                                <li ng-repeat="t in r.listtopics">
+                                    {{t.title}}
+                                </li>
                             </ul>
                         </div>
                     </div>

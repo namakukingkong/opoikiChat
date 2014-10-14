@@ -24,5 +24,11 @@ chat.controller('HomeController', ['$scope', '$http','request',
                 function(res){
                   $scope.rooms=res.results.rooms;
               });
-            console.log("end result:");       //  $scope.rooms=request.rooms().data.results.rooms;
+
+        $scope.submit = function() {
+            if ($scope.text) {
+                console.log("send message : "+$scope.text);
+
+            }
+        };
     }]);

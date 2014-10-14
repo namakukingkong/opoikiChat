@@ -10,8 +10,8 @@ chat.controller('AuthController', ['$scope', '$http', '$location','request',
         $scope.goLogin = function (u,p) {
             console.log(u);
             console.log(p);
-            // request.login(u,p);
-            $location.path('/home');
+            request.login(u,p);
+            // $location.path('/home');
         }
     }]);
 

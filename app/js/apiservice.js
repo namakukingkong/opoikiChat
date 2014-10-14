@@ -26,25 +26,23 @@
  
                 // I add a friend with the given name to the remote collection.
                 function login( u,p ) {
- 
+                    console.log("username"+u);
+                    console.log("password"+p);
                     var request = $http({
                         method: "post",
                         url: "http://www.qisc.us/users/sign_in.json",
-                        params: {
-                            action: "post"
-                        },
                         data: {
-                            'user[email]': name,
+                            'user[email]': u,
                             'user[password]':p
                         }
                     });
  
-                    // return( request.then( handleSuccess, handleError ) );
-                   var loginsuccess={
-                      data: {'success':true,'token':'As6T68Rys2Sk1z8413xP'},
-                      status: 200, 
-                      statusText: 'OK'};
-                    return handleSuccess(loginsuccess);
+                    return( request.then( handleSuccess, handleError ) );
+                   // var loginsuccess={
+                   //    data: {'success':true,'token':'As6T68Rys2Sk1z8413xP'},
+                   //    status: 200, 
+                   //    statusText: 'OK'};
+                   //  return handleSuccess(loginsuccess);
  
                 }
  

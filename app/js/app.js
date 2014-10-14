@@ -20,7 +20,7 @@ qischatMod.config(['$routeProvider',
                 controller: 'HomeController'
             }).
             otherwise({
-                redirectTo: '/home'
+                redirectTo: '/login'
             });
     }]);
 

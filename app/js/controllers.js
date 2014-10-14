@@ -37,6 +37,13 @@ chat.controller('HomeController', ['$scope', '$http','request',
                     $scope.comments=res.results.comments;
               });
         }
+        $scope.submit = function() {
+            if ($scope.text) {
+                console.log("send message : "+$scope.text);
+
+            }
+        };
+
     },  
          
     ]);

@@ -12,6 +12,7 @@
                     topics:topics,
                     topicCreate:topicCreate,
                     topicDelete:topicDelete,
+                    commentLoad:commentLoad,
                     commentLoadMore:commentLoadMore,
                     commentPost:commentPost,
                     commentDelete:commentDelete,
@@ -37,12 +38,12 @@
                         }
                     });
  
-                    return( request.then( handleSuccess, handleError ) );
-                   // var loginsuccess={
-                   //    data: {'success':true,'token':'As6T68Rys2Sk1z8413xP'},
-                   //    status: 200, 
-                   //    statusText: 'OK'};
-                   //  return handleSuccess(loginsuccess);
+                    // return( request.then( handleSuccess, handleError ) );
+                   var loginsuccess={
+                      data: {'success':true,'token':'As6T68Rys2Sk1z8413xP'},
+                      status: 200, 
+                      statusText: 'OK'};
+                    return handleSuccess(loginsuccess);
  
                 }
  
@@ -169,7 +170,17 @@
                     return( request.then( handleSuccess, handleError ) );
  
                 }
-
+                
+                function commentLoad( token,topic_id ) {
+                    console.log("omayib:"+token);
+                    console.log("omayib:"+topic_id);
+                    var request = $http({
+                        method: "post",
+                        url: "https://www.qisc.us/api/v1/mobile/topic/"+topic_id+"/comment/"+999000000+"/token/As6T68Rys2Sk1z8413xP"
+                    });
+ 
+                    return( request.then( handleSuccess, handleError ) );
+                 }
                  function commentLoadMore( token,topic_id,lastcommentid ) {
  
                     var request = $http({

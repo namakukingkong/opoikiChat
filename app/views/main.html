@@ -15,38 +15,25 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{r.id}}">{{r.name}}</a>
                             </h4>
                         </div>
-                        <div id="collapse-{{r.id}}" class="panel-collapse collapse">
+                        <div  id="collapse-{{r.id}}" class="panel-collapse collapse">
                             <ul class="nav ">
                                 <li ng-repeat="t in r.listtopics">
-                                    {{t.title}}
+                                  <a ng-click="getComments(123)"> {{t.title}}
                                 </li>
                             </ul>
                         </div>
                     </div>
-
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-2">Nama room 2</a>
-                            </h4>
-                        </div>
-                        <div id="collapse-2" class="panel-collapse collapse">
-                            <ul class="nav ">
-                                <li><a class="active" href="#">Topike</a></li>
-                                <li><a href="#">Topike</a></li>
-                                <li><a href="#">Topike</a></li>
-                                <li><a href="#">Topike</a></li>
-                            </ul>
-                        </div>
-                        </div>
-                    </div>
-
                 </div>
-
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main .pre-scrollable">
-            <p class="kamu bg-success col-sm-9">Proin sit? Elementum dignissim. Habitasse sit lectus pulvinar risus nascetur enim in? In tincidunt porttitor scelerisque, tristique non, tincidunt sit? Ultrices, integer lectus mattis. Lorem turpis magna integer, sagittis porta mattis dignissim vel cum magnis dolor diam enim parturient integer. Dapibus! Et cursus proin. Vel! Dictumst. Integer integer a porta tincidunt tincidunt</p>
+             <ul ng-repeat="c in comments">          
+                <li ng-if="c.username_real === 'a@phischool.com'" class="kamu bg-success col-sm-9" >
+                  {{c.message}}
+                </li>
+                <li ng-if="c.username_real !== 'a@phischool.com'" class="saya bg-success col-sm-9" >
+                 {{c.message}}
+                </li>
+            </ul>
             <p class="saya bg-info col-sm-9">yudgaskjhfbdas fjksadhgkjasg kjfhaglkajdhfg</p>
             <textarea class="form-control" ></textarea><span><button type="button" class="btn btn-success">Send</button></span>
         </div>
